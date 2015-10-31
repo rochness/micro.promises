@@ -73,7 +73,7 @@ var addNewUserToDatabaseAsync = function(user) {
     })
     .then(function(securedUser) {
       return db.createAndSaveUserAsync(securedUser) // Return another promise
-    })
+    });
 }
 
 // Uncomment the lines below and run the example with `node exercises/bare_minimum/chaining.js`

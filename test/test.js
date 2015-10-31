@@ -294,7 +294,7 @@ describe('Bare Minimum', function() {
 
   });
 
-  describe('Basic chaining', function() {
+  xdescribe('Basic chaining', function() {
     var chaining = require('../exercises/bare_minimum/chaining.js');
 
     describe('fetchProfileAndWriteToFile', function() {

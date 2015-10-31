@@ -55,12 +55,12 @@ var getGitHubProfile = function (user, callback) {
    } else if (body.message) {
      callback(new Error('Failed to get GitHub profile: ' + body.message), null);
    } else {
-     callback(null, body);
+     callback(err, body);
    }
  });
 };
 
-var getGitHubProfileAsync; // TODO
+var getGitHubProfileAsync = Promise.promisfy(getGitHubProfile); // TODO
 
 
 // (2) Asyncronous token generation
